@@ -1,0 +1,30 @@
+name: mybubble
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  bloc: ^8.0.2
+  flutter_bloc: ^8.0.1
+  stomp_dart_client: ^0.4.3
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_hooks: ^0.18.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+   - family: FuzzyBubbles
+     fonts:
+       - asset: assets/fonts/FuzzyBubbles-Regular.ttf
+       - asset: assets/fonts/FuzzyBubbles-Bold.ttf
+         weight: 700
