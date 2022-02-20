@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:mybubble/environment.dart';
 import 'package:mybubble/model/location.model.dart';
 import 'package:mybubble/theme.dart';
+import 'package:mybubble/widgets/bubble/bubble_float_view.widget.dart';
 import 'package:mybubble/widgets/bubble/bubble_list_view.widget.dart';
 
 import 'model/bubble.model.dart';
@@ -43,9 +44,10 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Bubble", style: Theme.of(context).textTheme.headline5)
         ),
-        body: BlocBuilder<BubbleBloc, BubbleState>(
-          builder: (context, state) => BubbleListView(state.bubbles)
-        )
+        body: const BubbleFloatView()
+        // body: BlocBuilder<BubbleBloc, BubbleState>(
+        //   builder: (context, state) => BubbleListView(state.bubbles)
+        // )
     );
   }
 }
