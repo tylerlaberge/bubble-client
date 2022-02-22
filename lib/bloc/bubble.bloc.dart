@@ -24,7 +24,7 @@ class BubbleBloc extends Bloc<BubbleEvent, BubbleState> {
             BubbleActiveState(
                 List
                   .from(state.bubbles.where((bubble) => bubble.id != event.bubble.id))
-                  ..insert(0, event.bubble)
+                  ..add(event.bubble)
             )
         );
     });

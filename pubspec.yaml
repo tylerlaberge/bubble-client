@@ -23,6 +23,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/white_background.jpg
   fonts:
    - family: FuzzyBubbles
      fonts:
